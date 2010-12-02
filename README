@@ -1,0 +1,15 @@
+I installed ghc from source and then I installed the Haskell Platform, which includes Cabal.
+
+I performed the installation locally as a normal user, so I had to add the following to my .profile:
+
+# set PATH so it includes user's private bin if it exists
+if [ -d ~/bin ] ; then
+    PATH=~/bin:"${PATH}"
+fi
+#
+#
+if [ -d ~/.cabal/bin ] ; then
+    PATH=~/.cabal/bin:"${PATH}"
+fi
+#
+
