@@ -13,3 +13,4 @@ if [ -d ~/.cabal/bin ] ; then
 fi
 #
 
+I'll try to follow this tutorial: http://learnyouahaskell.com/
