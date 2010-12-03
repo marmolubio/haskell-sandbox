@@ -7,10 +7,10 @@ main = do
         hSetBuffering stdin NoBuffering
         hSetBuffering stdout NoBuffering
         hSetEcho stdin False 
-        inputLoop
+        inputLoop []
           
-inputLoop :: IO ()
-inputLoop = do 
+inputLoop :: [Char] -> IO ()
+inputLoop s = do 
         c <- getChar
         putChar c
-        inputLoop
+        inputLoop (c:s)
