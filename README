@@ -1,6 +1,6 @@
 I installed ghc from source and then I installed the Haskell Platform, which includes Cabal.
 
-I performed the installation locally as a normal user, so I had to add the following to my .profile:
+The installation was performed locally as a normal user, so I had to add the following to my .profile:
 
 # set PATH so it includes user's private bin if it exists
 if [ -d ~/bin ] ; then
@@ -14,3 +14,12 @@ fi
 #
 
 I'll try to follow this tutorial: http://learnyouahaskell.com/
+
+Some useful git commands:
+
+git push origin master
+git pull origin master
+git pull origin
+git fetch origin
+git merge origin/master
+
