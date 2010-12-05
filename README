@@ -19,3 +19,6 @@ By default, cabal seems to install package executables in ~/.cabal/bin, even if 
 --user                         Enable doing a per-user installation
 --global                       Disable doing a per-user installation
 
+I'm using the latest version of "Haskell mode for Vim":
+
+http://projects.haskell.org/haskellmode-vim/
