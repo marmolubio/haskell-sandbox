@@ -1,6 +1,6 @@
 I installed ghc from binary in /usr/local.
 
-Then I compiled the Haskell Platform and installed it.
+Then I compiled the Haskell Platform and installed it as root.
 
 I'll try to follow this tutorial: http://learnyouahaskell.com/
 
@@ -13,3 +13,9 @@ git fetch origin
 git merge origin/master
 git remote show origin
 git log
+
+By default, cabal seems to install package executables in ~/.cabal/bin, even if you do it as root. But one can use the following options to change the default behaviour of cabal install: 
+
+--user                         Enable doing a per-user installation
+--global                       Disable doing a per-user installation
+
