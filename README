@@ -1,17 +1,6 @@
-I installed ghc from source and then I installed the Haskell Platform, which includes Cabal.
+I installed ghc from binary in /usr/local.
 
-The installation was performed locally as a normal user, so I had to add the following to my .profile:
-
-# set PATH so it includes user's private bin if it exists
-if [ -d ~/bin ] ; then
-    PATH=~/bin:"${PATH}"
-fi
-#
-#
-if [ -d ~/.cabal/bin ] ; then
-    PATH=~/.cabal/bin:"${PATH}"
-fi
-#
+Then I compiled the Haskell Platform and installed it.
 
 I'll try to follow this tutorial: http://learnyouahaskell.com/
 
