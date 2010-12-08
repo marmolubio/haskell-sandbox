@@ -22,3 +22,10 @@ By default, cabal seems to install package executables in ~/.cabal/bin, even if 
 I'm using the latest version of "Haskell mode for Vim":
 
 http://projects.haskell.org/haskellmode-vim/
+
+The problem I had installing Happstack was solved by doing the following:
+
+chown -R user:user .cabal
+chown -R user:user .ghc
+
+And by not using sudo to run cabal install.
